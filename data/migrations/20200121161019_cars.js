@@ -1,12 +1,16 @@
+// const xuid = require ('../xuid')
 
 exports.up = (knex) => (
   knex.schema.createTable ('cars', (table) => {
     table
       .timestamps (true, true)
     table
-      .uuid ('id')
-      .primary ()
-      .index ()
+      .increments ('id')
+      // .string ('id')
+      // .defaultTo (xuid.generate ())
+      // .notNullable ()
+      // .primary ()
+      // .index ()
     table
       .string ('vin', 255)
       .notNullable ()

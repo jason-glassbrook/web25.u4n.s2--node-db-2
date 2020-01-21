@@ -20,14 +20,14 @@ exports.up = (knex) => (
       .notNullable ()
       .index ()
     table
-      .float ('distance_driven_value')
+      .float ('distance_driven')
       .notNullable ()
     table
       .string ('distance_driven_scale')
       .defaultTo ('miles')
       .notNullable ()
     table
-      .enum ('transmission_type', [
+      .enum ('transmission', [
         'automatic',
         'manual',
       ])

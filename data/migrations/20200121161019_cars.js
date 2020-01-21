@@ -6,16 +6,20 @@ exports.up = (knex) => (
     table
       .uuid ('id')
       .primary ()
+      .index ()
     table
       .string ('vin', 255)
       .unique ()
       .notNullable ()
+      .index ()
     table
       .string ('make', 255)
       .notNullable ()
+      .index ()
     table
       .string ('model', 255)
       .notNullable ()
+      .index ()
     table
       .float ('distance_driven_value')
       .notNullable ()

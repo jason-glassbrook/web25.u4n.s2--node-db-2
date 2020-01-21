@@ -1,8 +1,10 @@
 
-exports.up = function(knex) {
-  
-};
+exports.up = (knex) => (
+  knex.schema.createTable ('cars', (table) => {
 
-exports.down = function(knex) {
-  
-};
+  })
+)
+
+exports.down = (knex) => (
+  knex.schema.dropTableIfExists ('cars')
+)

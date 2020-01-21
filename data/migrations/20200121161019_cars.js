@@ -9,9 +9,8 @@ exports.up = (knex) => (
       .index ()
     table
       .string ('vin', 255)
-      .unique ()
       .notNullable ()
-      .index ()
+      .unique ()
     table
       .string ('make', 255)
       .notNullable ()

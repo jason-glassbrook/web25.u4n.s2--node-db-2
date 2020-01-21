@@ -24,6 +24,10 @@ exports.up = (knex) => (
       .notNullable ()
       .index ()
     table
+      .integer ('year')
+      .nullable ()
+      .index ()
+    table
       .float ('distance_driven')
       .notNullable ()
     table

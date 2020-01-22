@@ -1,7 +1,9 @@
 // const xuid = require ('../xuid')
 
+const name = 'cars'
+
 exports.up = (knex) => (
-  knex.schema.createTable ('cars', (table) => {
+  knex.schema.createTable (name, (table) => {
     table
       .timestamps (true, true)
     table

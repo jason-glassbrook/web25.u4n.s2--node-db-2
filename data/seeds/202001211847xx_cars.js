@@ -18,6 +18,7 @@ exports.seed = (knex) => (
           'distance_driven' : 45309,
           'distance_driven_scale' : 'miles',
           'transmission' : 'automatic',
+          'title_status' : 'clean',
         },
         {
           'id' : 2,
@@ -28,6 +29,7 @@ exports.seed = (knex) => (
           'distance_driven' : 225311,
           'distance_driven_scale' : 'kilometers',
           'transmission' : 'automatic',
+          'title_status' : 'clean',
         },
         {
           'id' : 3,
@@ -38,6 +40,7 @@ exports.seed = (knex) => (
           'distance_driven' : 265149873,
           'distance_driven_scale' : 'meters',
           'transmission' : 'manual',
+          'title_status' : 'destroyed',
         },
       ])
     )
